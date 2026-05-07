@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - GolfCartPro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="index.html">
+          <i class="bi bi-ev-front-fill me-2 fs-3"></i> GolfCartPro
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasNavbarLabel"><i class="bi bi-ev-front-fill me-2"></i> GolfCartPro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body align-items-center">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+              <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+              <button id="rtlToggle" class="btn btn-sm btn-outline-secondary rounded-circle" aria-label="Toggle RTL">RTL</button>
+              <button class="btn btn-sm btn-outline-secondary rounded-circle" id="themeToggle" aria-label="Toggle Theme">
+                <i class="bi bi-moon-fill" id="themeIcon"></i>
+              </button>
+              <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+              <a href="register.html" class="btn btn-sm btn-primary">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero-section text-center py-5 bg-tertiary">
+      <div class="container">
+        <h1 class="display-5 fw-bold mb-3">Pricing Plans</h1>
+        <p class="lead text-secondary">Simple, transparent pricing for rentals and services.</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- Pricing Plan 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 text-center p-4">
+              <h4 class="fw-bold mb-3">Daily Rental</h4>
+              <h2 class="display-4 fw-bold text-primary mb-3">$45<span class="fs-5 text-secondary fw-normal">/day</span></h2>
+              <p class="text-secondary mb-4">Perfect for a quick round of golf or a small event.</p>
+              <ul class="list-unstyled text-center mb-4 flex-grow-1">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Standard 2-Seater Cart</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Fully Charged Battery</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Local Delivery Included</li>
+                <li class="mb-2 text-muted"><i class="bi bi-x-circle-fill me-2"></i> Custom Accessories</li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline-primary w-100 py-3">Book Now</a>
+            </div>
+          </div>
+          <!-- Pricing Plan 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 text-center p-4 border-primary border-2 position-relative shadow-sm">
+              <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2">Most Popular</span>
+              <h4 class="fw-bold mb-3">Weekly Rental</h4>
+              <h2 class="display-4 fw-bold text-primary mb-3">$250<span class="fs-5 text-secondary fw-normal">/week</span></h2>
+              <p class="text-secondary mb-4">Ideal for vacations and week-long tournaments.</p>
+              <ul class="list-unstyled text-center mb-4 flex-grow-1">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Premium 4-Seater Cart</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Charger Included</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Free Maintenance Call</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Basic Accessories</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary w-100 py-3">Book Now</a>
+            </div>
+          </div>
+          <!-- Pricing Plan 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 text-center p-4">
+              <h4 class="fw-bold mb-3">Monthly Lease</h4>
+              <h2 class="display-4 fw-bold text-primary mb-3">$800<span class="fs-5 text-secondary fw-normal">/month</span></h2>
+              <p class="text-secondary mb-4">Best value for long-term use at resorts or large properties.</p>
+              <ul class="list-unstyled text-center mb-4 flex-grow-1">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Any Cart Model</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Weekly Maintenance Check</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Priority Support</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Custom Accessories included</li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline-primary w-100 py-3">Contact Sales</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION: Flexible Add-ons -->
+    <section class="py-5 bg-tertiary">
+      <div class="container py-4 text-center">
+        <h3 class="fw-bold mb-4">Flexible Add-ons</h3>
+        <p class="text-secondary mb-5">Customize your rental with these convenient extras.</p>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+             <div class="facility-card p-3 bg-white rounded shadow-sm">
+                <i class="bi bi-geo-fill text-primary fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-1">GPS Navigation</h6>
+                <p class="small text-secondary mb-0">$5 / Day</p>
+             </div>
+          </div>
+          <div class="col-6 col-md-3">
+             <div class="facility-card p-3 bg-white rounded shadow-sm">
+                <i class="bi bi-snow text-primary fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-1">Portable Cooler</h6>
+                <p class="small text-secondary mb-0">$3 / Day</p>
+             </div>
+          </div>
+          <div class="col-6 col-md-3">
+             <div class="facility-card p-3 bg-white rounded shadow-sm">
+                <i class="bi bi-shield-shaded text-primary fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-1">Damage Waiver</h6>
+                <p class="small text-secondary mb-0">$10 / Day</p>
+             </div>
+          </div>
+          <div class="col-6 col-md-3">
+             <div class="facility-card p-3 bg-white rounded shadow-sm">
+                <i class="bi bi-speaker-fill text-primary fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-1">Bluetooth Speaker</h6>
+                <p class="small text-secondary mb-0">$4 / Day</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Corporate & Group Packages -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+             <div class="rounded shadow overflow-hidden" style="height: 350px;">
+                <img src="assets/images/golf-cart-3.png" class="w-100 h-100 object-fit-cover" alt="Corporate Fleet">
+             </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <h2 class="fw-bold mb-4">Corporate & Group Packages</h2>
+            <p class="text-secondary mb-4">Planning a large event or managing a resort fleet? We offer tailored high-volume packages with dedicated support and logistics management.</p>
+            <ul class="list-unstyled mb-4 d-inline-block text-start">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Discounted rates for 5+ carts</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Dedicated event coordinator</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Custom branding options available</li>
+            </ul>
+            <div class="mt-4">
+              <a href="contact.html" class="btn btn-outline-primary px-4">Inquire for Group Rates</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Special Discounts -->
+    <section class="py-5 bg-white">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="fw-bold mb-4">Special Savings for Our Heroes</h2>
+            <p class="text-secondary mb-4">We are proud to offer exclusive discounts to those who serve and our local community members. Proof of eligibility required at booking.</p>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="facility-card p-4 border rounded-4 text-center h-100">
+                   <h5 class="fw-bold text-primary">Military & First Responders</h5>
+                   <p class="small text-secondary mb-0">15% Off all rentals and standard maintenance services.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="facility-card p-4 border rounded-4 text-center h-100">
+                   <h5 class="fw-bold text-primary">Senior Citizens (65+)</h5>
+                   <p class="small text-secondary mb-0">10% Off daily and weekly rentals throughout the year.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+             <div class="rounded-4 shadow-lg overflow-hidden" style="height: 400px;">
+                <img src="https://images.unsplash.com/photo-1579208575657-c595a05383b7?fm=jpg&q=80&w=800" class="w-100 h-100 object-fit-cover" alt="Community Savings">
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Custom Build Estimates -->
+    <section class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2 text-center">
+            <h2 class="fw-bold mb-4">Custom Build Estimates</h2>
+            <p class="text-secondary mb-4">Dreaming of a one-of-a-kind ride? Our custom shop provides detailed estimates for full restorations and performance upgrades.</p>
+            <div class="card border-0 shadow-sm p-4 rounded-4">
+               <ul class="list-unstyled mb-0">
+                  <li class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                     <span>Custom Paint Job</span>
+                     <span class="fw-bold">From $450</span>
+                  </li>
+                  <li class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                     <span>Lithium Battery Upgrade</span>
+                     <span class="fw-bold">From $1,200</span>
+                  </li>
+                  <li class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                     <span>Luxury Seating Package</span>
+                     <span class="fw-bold">From $350</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                     <span>Off-Road Lift Kits</span>
+                     <span class="fw-bold">From $600</span>
+                  </li>
+               </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+             <div class="rounded-4 shadow-lg overflow-hidden" style="height: 400px;">
+                <img src="assets/images/srv_custom_paint.png" class="w-100 h-100 object-fit-cover" alt="Custom Shop">
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Delivery Service Zones -->
+    <section class="py-5 bg-white">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="fw-bold mb-4">Convenient Delivery Zones</h2>
+            <p class="text-secondary mb-4">We deliver right to your doorstep, resort, or golf course. Our delivery fees are based on distance from our main service center.</p>
+            <div class="accordion" id="deliveryAccordion">
+               <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#zone1">
+                        Zone A: Within 10 Miles
+                     </button>
+                  </h2>
+                  <div id="zone1" class="accordion-collapse collapse show" data-bs-parent="#deliveryAccordion">
+                     <div class="accordion-body text-secondary small">
+                        <strong>FREE Delivery & Pickup</strong> for all weekly and monthly rentals. $15 for daily rentals.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#zone2">
+                        Zone B: 10-25 Miles
+                     </button>
+                  </h2>
+                  <div id="zone2" class="accordion-collapse collapse" data-bs-parent="#deliveryAccordion">
+                     <div class="accordion-body text-secondary small">
+                        $25 Flat rate for delivery and pickup. Includes basic safety briefing on-site.
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+             <div class="rounded-4 shadow-lg overflow-hidden" style="height: 400px;">
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?fm=jpg&q=80&w=800" class="w-100 h-100 object-fit-cover" alt="Delivery Map">
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Membership Program -->
+    <section class="py-5 position-relative overflow-hidden" style="min-height: 500px; background: linear-gradient(rgba(13, 66, 37, 0.9), rgba(13, 66, 37, 0.9)), url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?fm=jpg&q=80&w=1600') center/cover;">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 text-white text-center">
+            <span class="badge bg-warning text-dark px-3 py-2 mb-3 fw-bold rounded-pill mx-auto d-table">PREMIUM MEMBERSHIP</span>
+            <h2 class="display-4 fw-bold mb-4">Join the <span class="text-warning">ProClub</span> Experience</h2>
+            <p class="lead mb-5 opacity-75">Elevate your golf cart ownership or rental experience. ProClub members enjoy unprecedented access, priority service, and permanent savings across our entire network.</p>
+            
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6 text-start">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="bg-warning text-dark rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1">Priority Scheduling</h6>
+                    <p class="small opacity-75 mb-0">Jump the queue with 24-hour service guarantees.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="bg-warning text-dark rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                    <i class="bi bi-percent"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1">Exclusive Rates</h6>
+                    <p class="small opacity-75 mb-0">Permanent 20% discount on all rental add-ons.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-5">
+              <a href="contact.html" class="btn btn-warning btn-lg px-5 py-3 fw-bold text-dark shadow-lg">Become a Member Today</a>
+            </div>
+          </div>
+          
+          <div class="col-lg-5">
+            <div class="card bg-white bg-opacity-10 border border-white border-opacity-25 rounded-4 p-4 text-white" style="backdrop-filter: blur(10px);">
+              <div class="text-center mb-4">
+                <h3 class="fw-bold text-warning mb-0">$99</h3>
+                <p class="small opacity-75">ANNUAL MEMBERSHIP</p>
+              </div>
+              <div class="rounded-4 overflow-hidden mb-4 shadow-lg" style="height: 250px;">
+                <img src="assets/images/srv_fleet_management.png" class="w-100 h-100 object-fit-cover" alt="Membership">
+              </div>
+              <ul class="list-unstyled small opacity-75 mb-0">
+                <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-warning"></i> Free Annual Multi-Point Inspection</li>
+                <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-warning"></i> 10% Discount on Major Repairs</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-warning"></i> Quarterly Member Newsletter</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Compare Features -->
+    <section class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Compare Features</h2>
+          <p class="text-secondary">Detailed breakdown of our rental and leasing options.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="table-responsive shadow-sm rounded border bg-white">
+              <table class="table table-hover mb-0 align-middle">
+                <thead class="bg-primary text-white">
+                  <tr>
+                    <th class="p-3">Feature</th>
+                    <th class="p-3 text-center">Daily</th>
+                    <th class="p-3 text-center">Weekly</th>
+                    <th class="p-3 text-center">Monthly</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3 fw-bold">Cart Models</td>
+                    <td class="p-3 text-center">Standard Only</td>
+                    <td class="p-3 text-center">Standard & Premium</td>
+                    <td class="p-3 text-center">All Models</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 fw-bold">Delivery & Pickup</td>
+                    <td class="p-3 text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+                    <td class="p-3 text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+                    <td class="p-3 text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 fw-bold">Maintenance Support</td>
+                    <td class="p-3 text-center text-secondary small">On-call</td>
+                    <td class="p-3 text-center text-success fw-bold">Priority</td>
+                    <td class="p-3 text-center text-success fw-bold">24/7 VIP</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 fw-bold">Custom branding</td>
+                    <td class="p-3 text-center text-danger"><i class="bi bi-x-circle-fill"></i></td>
+                    <td class="p-3 text-center text-danger"><i class="bi bi-x-circle-fill"></i></td>
+                    <td class="p-3 text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 fw-bold">Upgrade anytime</td>
+                    <td class="p-3 text-center text-danger"><i class="bi bi-x-circle-fill"></i></td>
+                    <td class="p-3 text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+                    <td class="p-3 text-center text-success"><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- SECTION: Pricing FAQ -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Pricing FAQ</h2>
+          <p class="text-secondary">Common questions about our rates and policies.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion shadow-sm" id="pricingFaq">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq1">
+                    Is there a security deposit required?
+                  </button>
+                </h2>
+                <div id="pfaq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaq">
+                  <div class="accordion-body text-secondary">
+                    Yes, a 20% refundable security deposit is required at the time of booking to secure your reservation.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq2">
+                    What is your cancellation policy?
+                  </button>
+                </h2>
+                <div id="pfaq2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                  <div class="accordion-body text-secondary">
+                    Cancellations made 48 hours before the start date receive a full refund. Within 48 hours, the deposit is non-refundable.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq3">
+                    Are delivery and pickup fees included?
+                  </button>
+                </h2>
+                <div id="pfaq3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                  <div class="accordion-body text-secondary">
+                    Free delivery and pickup are included within our standard service zone. Small fees may apply for remote locations.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 mt-auto">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3 d-flex align-items-center text-white">
+            <i class="bi bi-ev-front-fill me-2"></i> GolfCartPro
+          </h5>
+          <p class="text-white-50">Your trusted partner for premium golf cart rentals, reliable repairs, and dedicated services. Quality you can ride on.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Support</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="service-details.html">FAQ</a></li>
+            <li><a href="blog.html">Blog & News</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+          <p class="text-white-50">Subscribe to our newsletter to get the latest updates and offers.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-4 pt-4 text-center text-white-50">
+        <p class="mb-0">&copy; 2026 GolfCartPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <button class="btn btn-primary rounded-circle" id="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

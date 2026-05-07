@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - GolfCartPro</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="index.html">
+          <i class="bi bi-ev-front-fill me-2 fs-3"></i> GolfCartPro
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasNavbarLabel"><i class="bi bi-ev-front-fill me-2"></i> GolfCartPro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body align-items-center">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
+              <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+              <button id="rtlToggle" class="btn btn-sm btn-outline-secondary rounded-circle" aria-label="Toggle RTL">RTL</button>
+              <button class="btn btn-sm btn-outline-secondary rounded-circle" id="themeToggle" aria-label="Toggle Theme">
+                <i class="bi bi-moon-fill" id="themeIcon"></i>
+              </button>
+              <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+              <a href="register.html" class="btn btn-sm btn-primary">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5 d-flex align-items-center" style="min-height: 80vh; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('assets/images/home1_hero.png') center/cover;">
+      <div class="container py-5 text-white">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-4 text-white">Premium Golf Cart Rentals & Services</h1>
+            <p class="lead mb-5 text-white-50">View our fleet, transparent pricing, and book your ride online today with a small deposit.</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="#booking" class="btn btn-primary btn-lg hero-btn">Book Now</a>
+              <a href="#fleet" class="btn btn-outline-light btn-lg hero-btn">View Fleet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Fleet Photos -->
+    <section id="fleet" class="py-5 bg-tertiary">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Fleet</h2>
+          <p class="text-secondary fs-4">Take a look at our premium golf carts available for rent.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <img src="assets/images/golf-cart-1.png" class="card-img-top" alt="2-Seater Standard" style="height:250px; object-fit:cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold">2-Seater Standard</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <img src="assets/images/golf-cart-2.png" class="card-img-top" alt="4-Seater Premium" style="height:250px; object-fit:cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold">4-Seater Premium</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <img src="assets/images/golf-cart-3.png" class="card-img-top" alt="6-Seater Limo" style="height:250px; object-fit:cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold">6-Seater Limo</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Rental Rates -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Rental Rates</h2>
+          <p class="text-secondary">Simple daily and weekly pricing for our carts.</p>
+        </div>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-5">
+            <div class="card h-100 p-4 border-0 shadow text-center">
+              <h4 class="fw-bold">Daily Rate</h4>
+              <h2 class="display-4 fw-bold text-primary my-3">$45<span class="fs-5 text-secondary fw-normal">/day</span></h2>
+              <ul class="list-unstyled text-start mt-4">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Standard 2-Seater Cart</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Local Delivery Included</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card h-100 p-4 border-0 shadow text-center border-bottom border-primary border-4">
+              <h4 class="fw-bold">Weekly Rate</h4>
+              <h2 class="display-4 fw-bold text-primary my-3">$250<span class="fs-5 text-secondary fw-normal">/week</span></h2>
+              <ul class="list-unstyled text-start mt-4">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Premium 4-Seater Cart</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Charger & Free Maintenance Call</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Repair Service Menu -->
+    <section class="py-5 bg-tertiary">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Repair Service Menu</h2>
+          <p class="text-secondary">Comprehensive repair services to keep you on the move.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center py-3 bg-transparent border-bottom">
+                  <div>
+                    <h5 class="fw-bold mb-1">Battery Diagnostic & Replacement</h5>
+                    <small class="text-secondary">Full testing and new battery installation.</small>
+                  </div>
+                  <span class="fw-bold text-primary">From $150</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center py-3 bg-transparent border-bottom">
+                  <div>
+                    <h5 class="fw-bold mb-1">Tire Replacement & Alignment</h5>
+                    <small class="text-secondary">New tires and proper alignment service.</small>
+                  </div>
+                  <span class="fw-bold text-primary">From $80</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center py-3 bg-transparent border-bottom">
+                  <div>
+                    <h5 class="fw-bold mb-1">Motor & Controller Repairs</h5>
+                    <small class="text-secondary">Fixing speed issues and electrical faults.</small>
+                  </div>
+                  <span class="fw-bold text-primary">Custom Quote</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center py-3 bg-transparent border-bottom">
+                  <div>
+                    <h5 class="fw-bold mb-1">Annual Maintenance Package</h5>
+                    <small class="text-secondary">Brakes, greasing, connections check.</small>
+                  </div>
+                  <span class="fw-bold text-primary">$99/yr</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Online Booking with Deposit -->
+    <section id="booking" class="py-5">
+      <div class="container py-4">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <h2 class="fw-bold mb-4">Book Your Cart Online</h2>
+            <p class="text-secondary mb-4">Reserve your golf cart today with a small 20% deposit. Just fill out the form, choose your dates, and secure your rental instantly.</p>
+            <ul class="list-unstyled">
+              <li class="mb-3"><i class="bi bi-shield-check text-primary me-2 fs-5"></i> Secure Online Payment</li>
+              <li class="mb-3"><i class="bi bi-calendar-check text-primary me-2 fs-5"></i> Instant Confirmation</li>
+              <li class="mb-3"><i class="bi bi-arrow-clockwise text-primary me-2 fs-5"></i> Free Cancellation (48hrs)</li>
+            </ul>
+          </div>
+          <div class="col-lg-7">
+            <div class="card border-0 shadow p-4 p-md-5">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Full Name</label>
+                    <input type="text" class="form-control" placeholder="John Doe" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Email Address</label>
+                    <input type="email" class="form-control" placeholder="name@example.com" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Select Cart</label>
+                    <select class="form-select">
+                      <option>2-Seater Standard ($45/day)</option>
+                      <option>4-Seater Premium ($65/day)</option>
+                      <option>6-Seater Limo ($95/day)</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Rental Type</label>
+                    <select class="form-select">
+                      <option>Daily</option>
+                      <option>Weekly (Discount Applied)</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Start Date</label>
+                    <input type="date" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">End Date</label>
+                    <input type="date" class="form-control" required>
+                  </div>
+                  <div class="col-12 mt-4 text-center">
+                    <div class="alert alert-secondary border-0 mb-4 text-start">
+                      <strong>Total Estimated:</strong> $45.00 <br>
+                      <strong class="text-primary">Deposit Required Now (20%):</strong> $9.00
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Pay Deposit & Book Now</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Gallery Preview -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Explore Our Gallery</h2>
+          <p class="text-secondary">A glimpse into our high-end custom carts and showroom.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="rounded shadow overflow-hidden position-relative" style="height: 400px;">
+              <img src="assets/images/h1_showroom.png" class="w-100 h-100 object-fit-cover" alt="Showroom">
+              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-dark bg-opacity-50 text-white">
+                <h5 class="fw-bold mb-0">Premium Showroom</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="rounded shadow overflow-hidden position-relative" style="height: 188px;">
+                   <img src="assets/images/srv_custom_paint.png" class="w-100 h-100 object-fit-cover" alt="Custom Builds">
+                   <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-50 text-white">
+                    <h6 class="fw-bold mb-0">Custom Paint Jobs</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="rounded shadow overflow-hidden position-relative" style="height: 188px;">
+                   <img src="assets/images/srv_accessories.png" class="w-100 h-100 object-fit-cover" alt="Accessories">
+                   <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-50 text-white">
+                    <h6 class="fw-bold mb-0">Luxury Accessories</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Why Choose Us -->
+    <section class="py-5 bg-tertiary">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Why Choose GolfCartPro?</h2>
+          <p class="text-secondary">The industry standard in golf cart solutions.</p>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="p-4">
+              <img src="assets/images/fast_turnaround.png" alt="Fast Turnaround" class="img-fluid rounded-circle mb-3 shadow-sm border border-primary border-2 p-1 bg-white" style="width: 100px; height: 100px; object-fit: cover;">
+              <h5 class="fw-bold">Fast Turnaround</h5>
+              <p class="text-secondary">Most repairs completed within 24-48 hours. We value your time.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4">
+              <img src="assets/images/certified_techs.png" alt="Certified Techs" class="img-fluid rounded-circle mb-3 shadow-sm border border-primary border-2 p-1 bg-white" style="width: 100px; height: 100px; object-fit: cover;">
+              <h5 class="fw-bold">Certified Techs</h5>
+              <p class="text-secondary">Our team is factory-trained and certified for all major brands.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4">
+              <img src="assets/images/free_delivery.png" alt="Free Delivery" class="img-fluid rounded-circle mb-3 shadow-sm border border-primary border-2 p-1 bg-white" style="width: 100px; height: 100px; object-fit: cover;">
+              <h5 class="fw-bold">Free Delivery</h5>
+              <p class="text-secondary">Complimentary pickup and delivery for all major service jobs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Full Width CTA -->
+    <section class="py-5 text-white text-center" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/home1_hero.png') center/cover fixed;">
+      <div class="container py-5">
+        <h2 class="display-4 fw-bold mb-3 text-white">Ready for the Green?</h2>
+        <p class="lead mb-4 mx-auto opacity-75" style="max-width: 700px;">Experience the best golf cart rentals and services in the area. Your next adventure starts here.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#booking" class="btn btn-primary btn-lg px-4 hero-btn">Book Now</a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg px-4 hero-btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Testimonials -->
+    <section class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Our Customers Say</h2>
+          <p class="text-secondary">Read reviews from our satisfied clients.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+              <div class="mb-3 text-warning text-center">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary italic">"Excellent service! The golf cart was in perfect condition and the booking process was seamless. Highly recommend!"</p>
+              <div class="d-flex flex-column align-items-center justify-content-center mt-auto pt-3 border-top text-center">
+                <img src="assets/images/customer_1_john.png" alt="John Doe" class="rounded-circle mb-2 border border-2 border-primary" style="width: 60px; height: 60px; object-fit: cover;">
+                <div>
+                  <div class="fw-bold">John Doe</div>
+                  <div class="text-secondary small">Resort Guest</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+              <div class="mb-3 text-warning text-center">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary italic">"The repair team was very professional. They fixed my cart's battery issue in no time and at a fair price."</p>
+              <div class="d-flex flex-column align-items-center justify-content-center mt-auto pt-3 border-top text-center">
+                <img src="assets/images/customer_2_jane.png" alt="Jane Smith" class="rounded-circle mb-2 border border-2 border-primary" style="width: 60px; height: 60px; object-fit: cover;">
+                <div>
+                  <div class="fw-bold">Jane Smith</div>
+                  <div class="text-secondary small">Local Owner</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+              <div class="mb-3 text-warning text-center">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary italic">"Great fleet management services. They've helped us maintain our resort's carts perfectly for over a year now."</p>
+              <div class="d-flex flex-column align-items-center justify-content-center mt-auto pt-3 border-top text-center">
+                <img src="assets/images/customer_3_mike.png" alt="Mike Johnson" class="rounded-circle mb-2 border border-2 border-primary" style="width: 60px; height: 60px; object-fit: cover;">
+                <div>
+                  <div class="fw-bold">Mike Johnson</div>
+                  <div class="text-secondary small">Hotel Manager</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Delivery Area Map -->
+    <section class="py-5 bg-tertiary">
+      <div class="container py-4 text-center">
+        <h2 class="fw-bold mb-4">Our Delivery Area</h2>
+        <p class="text-secondary mb-5">We offer free delivery within the highlighted zone below. Outside this area, standard delivery rates apply.</p>
+        <div class="card overflow-hidden shadow-sm border-0 mx-auto" style="max-width: 900px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112104.79370881903!2d-81.47271428588526!3d28.513515437812543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1714545063462!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Latest Blog -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Latest from the Blog</h2>
+          <p class="text-secondary">Stay updated with our latest news and tips.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <img src="assets/images/golf-cart-1.png" class="card-img-top" alt="Blog 1">
+              <div class="card-body">
+                <h5 class="fw-bold card-title">Top 5 Maintenance Tips</h5>
+                <p class="card-text text-secondary small">Keep your cart in top shape with these simple summer tips...</p>
+                <a href="blog-details.html" class="btn btn-link text-primary p-0 fw-bold text-decoration-none">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <img src="assets/images/golf-cart-2.png" class="card-img-top" alt="Blog 2">
+              <div class="card-body">
+                <h5 class="fw-bold card-title">Electric vs Gas Carts</h5>
+                <p class="card-text text-secondary small">Which one is right for your resort? We break down the pros...</p>
+                <a href="blog-details.html" class="btn btn-link text-primary p-0 fw-bold text-decoration-none">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <img src="assets/images/golf-cart-3.png" class="card-img-top" alt="Blog 3">
+              <div class="card-body">
+                <h5 class="fw-bold card-title">Custom Paint Guide</h5>
+                <p class="card-text text-secondary small">Make your cart stand out with our latest custom paint trends...</p>
+                <a href="blog-details.html" class="btn btn-link text-primary p-0 fw-bold text-decoration-none">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FAQ -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Frequently Asked Questions</h2>
+          <p class="text-secondary">Find answers to common questions about our services.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    How do I book a rental?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    You can book directly on our website through the booking form. Simply select your cart, dates, and pay the deposit to confirm your reservation.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    What is the delivery area?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We deliver within a 25-mile radius of our main shop. Please check the delivery map for details or contact us for special requests.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Do you offer long-term rentals?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, we offer weekly and monthly rental packages at discounted rates. Contact our support team for a custom quote.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 mt-auto">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3 d-flex align-items-center text-white">
+            <i class="bi bi-ev-front-fill me-2"></i> GolfCartPro
+          </h5>
+          <p class="text-white-50">Your trusted partner for premium golf cart rentals, reliable repairs, and dedicated services. Quality you can ride on.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Support</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="service-details.html">FAQ</a></li>
+            <li><a href="blog.html">Blog & News</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+          <p class="text-white-50">Subscribe to our newsletter to get the latest updates and offers.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-4 pt-4 text-center text-white-50">
+        <p class="mb-0">&copy; 2026 GolfCartPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <button class="btn btn-primary rounded-circle" id="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

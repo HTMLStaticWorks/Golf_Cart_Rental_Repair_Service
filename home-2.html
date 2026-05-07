@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Alternative - GolfCartPro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="index.html">
+          <i class="bi bi-ev-front-fill me-2 fs-3"></i> GolfCartPro
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasNavbarLabel"><i class="bi bi-ev-front-fill me-2"></i> GolfCartPro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body align-items-center">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+              <li class="nav-item"><a class="nav-link active" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+              <button id="rtlToggle" class="btn btn-sm btn-outline-secondary rounded-circle" aria-label="Toggle RTL">RTL</button>
+              <button class="btn btn-sm btn-outline-secondary rounded-circle" id="themeToggle" aria-label="Toggle Theme">
+                <i class="bi bi-moon-fill" id="themeIcon"></i>
+              </button>
+              <a href="login.html" class="btn btn-sm btn-primary">Login</a>
+              <a href="register.html" class="btn btn-sm btn-primary">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section Niche -->
+    <section class="hero-section py-5 d-flex align-items-center" style="min-height: 80vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/home2_hero.png') center/cover;">
+      <div class="container text-center text-white">
+        <h1 class="display-3 fw-bold mb-4 text-white">Niche Golf Cart Solutions</h1>
+        <p class="lead mb-5 text-white-50">Specialized in custom builds, off-road conversions, and resort fleet management.</p>
+        <a href="services.html" class="btn btn-primary btn-lg hero-btn">Explore Our Niche</a>
+      </div>
+    </section>
+
+    <!-- SECTION: Specialized Expertise Icons -->
+    <section class="py-4 border-bottom">
+      <div class="container">
+        <div class="row g-4 text-center justify-content-center">
+          <div class="col-md-3 col-6">
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <i class="bi bi-gear-wide-connected text-primary fs-3"></i>
+              <span class="fw-bold text-secondary">Advanced Tuning</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <i class="bi bi-palette-fill text-primary fs-3"></i>
+              <span class="fw-bold text-secondary">Custom Finishes</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <i class="bi bi-battery-charging text-primary fs-3"></i>
+              <span class="fw-bold text-secondary">Lithium Upgrades</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <i class="bi bi-shield-lock-fill text-primary fs-3"></i>
+              <span class="fw-bold text-secondary">Fleet Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2">
+            <img src="assets/images/golf-cart-2.png" class="img-fluid rounded" alt="Resort Cart">
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <h2 class="fw-bold mb-4">Resort Fleet Management</h2>
+            <p class="text-secondary mb-4">We partner with top resorts and country clubs to provide comprehensive fleet management solutions, ensuring your guests always have a smooth ride.</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Scheduled maintenance</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> GPS tracking integration</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Fleet customization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Our Process -->
+    <section class="py-5 bg-tertiary">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">How We Build Your Vision</h2>
+          <p class="text-secondary">A step-by-step approach to custom golf cart excellence.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="text-center">
+              <img src="assets/images/step1.png" alt="Consultation" class="mb-3 mx-auto rounded-circle shadow-sm border border-4 border-white" style="width: 120px; height: 120px; object-fit: cover;">
+              <h5 class="fw-bold">Consultation</h5>
+              <p class="text-secondary small">We discuss your needs, style preferences, and intended use cases.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <img src="assets/images/step2.png" alt="Design Phase" class="mb-3 mx-auto rounded-circle shadow-sm border border-4 border-white" style="width: 120px; height: 120px; object-fit: cover;">
+              <h5 class="fw-bold">Design Phase</h5>
+              <p class="text-secondary small">Our experts create a custom blueprint including paint, parts, and accessories.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <img src="assets/images/step3.png" alt="Build & Test" class="mb-3 mx-auto rounded-circle shadow-sm border border-4 border-white" style="width: 120px; height: 120px; object-fit: cover;">
+              <h5 class="fw-bold">Build & Test</h5>
+              <p class="text-secondary small">Skilled technicians assemble your cart and perform rigorous safety testing.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <img src="assets/images/step4.png" alt="Delivery" class="mb-3 mx-auto rounded-circle shadow-sm border border-4 border-white" style="width: 120px; height: 120px; object-fit: cover;">
+              <h5 class="fw-bold">Delivery</h5>
+              <p class="text-secondary small">We deliver your dream cart right to your doorstep or resort location.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Event Solutions -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">Special Event Solutions</h2>
+            <p class="text-secondary mb-4">From luxury weddings to major corporate events, we provide specialized transportation solutions that add a touch of class and convenience.</p>
+            <div class="row g-4">
+              <div class="col-6">
+                <div class="p-4 border rounded text-center event-box">
+                  <i class="bi bi-heart-fill text-primary fs-2 mb-2"></i>
+                  <h6 class="fw-bold mb-0">Weddings</h6>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-4 border rounded text-center event-box">
+                  <i class="bi bi-building-fill text-primary fs-2 mb-2"></i>
+                  <h6 class="fw-bold mb-0">Corporate</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="rounded shadow overflow-hidden" style="height: 350px;">
+              <img src="assets/images/golf-cart-3.png" class="w-100 h-100 object-fit-cover" alt="Event Solutions">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Custom Feature Spotlight -->
+    <section class="py-5 bg-tertiary">
+      <div class="container py-4 text-center">
+        <h2 class="fw-bold mb-5">Premium Custom Features</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden text-start">
+              <img src="assets/images/srv_accessories.png" class="card-img-top" alt="Feature 1" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="fw-bold">Luxury Interiors</h5>
+                <p class="text-secondary small">Hand-stitched leather seats, premium sound systems, and custom dash layouts for ultimate comfort.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden text-start">
+              <img src="assets/images/srv_custom_paint.png" class="card-img-top" alt="Feature 2" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="fw-bold">Advanced Power</h5>
+                <p class="text-secondary small">Lithium-ion battery upgrades and high-torque motors for increased range and better hill climbing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Restoration Before & After -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Master Restoration</h2>
+          <p class="text-secondary">We breathe new life into vintage and worn-out carts.</p>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5">
+            <div class="position-relative">
+              <img src="assets/images/golf-cart-1.png" class="img-fluid rounded shadow-sm opacity-50" alt="Before">
+              <div class="position-absolute top-0 start-0 p-3 bg-dark text-white fw-bold small">BEFORE</div>
+            </div>
+          </div>
+          <div class="col-md-2 text-center d-none d-md-block">
+             <i class="bi bi-arrow-right-circle-fill display-4 text-primary"></i>
+          </div>
+          <div class="col-md-5">
+            <div class="position-relative border border-primary border-4 rounded overflow-hidden">
+              <img src="assets/images/golf-cart-2.png" class="img-fluid rounded shadow" alt="After">
+              <div class="position-absolute top-0 start-0 p-3 bg-primary text-white fw-bold small">AFTER</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Elite Client Testimonials -->
+    <section class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Elite Client Feedback</h2>
+          <p class="text-secondary">What the industry's best say about our niche solutions.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-4 bg-white rounded shadow-sm text-center">
+              <p class="italic text-secondary mb-3">"The fleet customization for our wedding venue was flawless. The carts match our theme perfectly and our guests love them."</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="fw-bold text-primary">Victoria Hall</div>
+                <div class="ms-2 text-secondary small">- Event Director</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 bg-white rounded shadow-sm text-center">
+              <p class="italic text-secondary mb-3">"Their lithium battery conversion service doubled our fleet runtime and cut maintenance costs by 40%. A game changer."</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="fw-bold text-primary">Marcus Thorne</div>
+                <div class="ms-2 text-secondary small">- Resort Operations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Consultation CTA -->
+    <section class="py-5 bg-primary text-white text-center">
+      <div class="container py-4">
+        <h2 class="fw-bold mb-3 text-white">Let's Build Your Dream Cart</h2>
+        <p class="lead mb-4 mx-auto opacity-75" style="max-width: 600px;">Book a free design consultation today and see how we can bring your niche vision to life.</p>
+        <a href="contact.html" class="btn btn-light btn-lg px-5 text-primary fw-bold">Request a Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 mt-auto">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3 d-flex align-items-center text-white">
+            <i class="bi bi-ev-front-fill me-2"></i> GolfCartPro
+          </h5>
+          <p class="text-white-50">Your trusted partner for premium golf cart rentals, reliable repairs, and dedicated services. Quality you can ride on.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Support</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="service-details.html">FAQ</a></li>
+            <li><a href="blog.html">Blog & News</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+          <p class="text-white-50">Subscribe to our newsletter to get the latest updates and offers.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-4 pt-4 text-center text-white-50">
+        <p class="mb-0">&copy; 2026 GolfCartPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <button class="btn btn-primary rounded-circle" id="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
