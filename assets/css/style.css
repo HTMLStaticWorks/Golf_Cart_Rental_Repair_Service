@@ -103,6 +103,12 @@ footer a:hover {
   color: #fff;
 }
 
+/* Footer brand name — always green (same as navbar) in both light & dark mode */
+footer .footer-brand,
+[data-bs-theme="dark"] footer .footer-brand {
+  color: #198754 !important;
+}
+
 /* Back to Top */
 #back-to-top {
   position: fixed;
@@ -310,6 +316,17 @@ h1, h2, h3, h4, h5, h6 {
   .display-5 { font-size: 1.8rem !important; }
   section { padding: 40px 0 !important; }
   .hero-section { min-height: 400px !important; padding: 60px 0 !important; }
+
+  /* Fix hero buttons overflowing on mobile */
+  .hero-btn {
+    min-width: unset !important;
+    width: 100% !important;
+  }
+}
+
+/* Responsive width utility — auto-width at sm+ breakpoint */
+@media (min-width: 576px) {
+  .w-sm-auto { width: auto !important; }
 }
 
 /* Card Improvements */
@@ -331,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
   .img-height-md { height: 400px !important; }
 }
 @media (max-width: 767px) {
-  .img-height-lg, .img-height-md { height: 300px !important; }
+  .img-height-lg, .img-height-md { height: auto !important; }
 }
 
 /* Partner Logo Hover Effect */
