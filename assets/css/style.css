@@ -228,11 +228,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #adb5bd !important;
 }
 
-/* Force dark text on elements that stay white in dark mode (like specific cards) */
-[data-bs-theme="dark"] .facility-card:not(:hover),
-[data-bs-theme="dark"] .facility-card:not(:hover) * {
-  color: #212529 !important;
-}
+/* Force dark text on elements that stay white in dark mode (if any) */
+/* Rule removed to fix visibility issue reported by user */
 
 [data-bs-theme="dark"] .bg-tertiary p,
 [data-bs-theme="dark"] .bg-tertiary h1,
@@ -296,4 +293,24 @@ h1, h2, h3, h4, h5, h6 {
 [dir="rtl"] .me-2 {
   margin-right: 0 !important;
   margin-left: 0.5rem !important;
+}
+
+/* Guaranteed Adaptive Text */
+.dynamic-contrast-text {
+  color: #212529 !important;
+}
+[data-bs-theme="dark"] .dynamic-contrast-text {
+  color: #ffffff !important;
+}
+
+/* Partner Logo Hover Effect */
+.partner-logo-hover {
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.partner-logo-hover:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
 }
