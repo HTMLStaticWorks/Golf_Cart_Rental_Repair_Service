@@ -260,15 +260,24 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 0.7rem;
+  font-weight: 700;
+  font-size: 0.75rem;
   transition: all 0.3s ease;
+  border: 1.5px solid #212529 !important;
+  color: #212529 !important;
+  background-color: transparent;
+}
+
+[data-bs-theme="dark"] #rtlToggle, 
+[data-bs-theme="dark"] #themeToggle {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 #rtlToggle:hover, #themeToggle:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #fff !important;
 }
 
 /* Social Buttons */
