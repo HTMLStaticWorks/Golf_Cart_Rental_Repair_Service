@@ -35,6 +35,20 @@ body {
   border-color: #13653f;
   color: #fff;
 }
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
 
 /* Header */
 .navbar {
@@ -57,6 +71,22 @@ body {
   background-color: var(--primary-color);
   bottom: 0;
   left: 0;
+}
+
+/* Custom Header Login Button Styling */
+.navbar .btn-outline-primary {
+  color: var(--primary-color) !important;
+  border: 1.5px solid var(--primary-color) !important;
+  background-color: #ffffff !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+}
+.navbar .btn-outline-primary:hover,
+.navbar .btn-outline-primary:focus,
+.navbar .btn-outline-primary:active {
+  color: #ffffff !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
 }
 
 /* Hero Section */
@@ -386,4 +416,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #146c43;
+}
+
+/* Gallery Premium Hover and High-Contrast Text Overlays */
+.gallery-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+.gallery-img {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.gallery-container:hover .gallery-img {
+  transform: scale(1.06);
+}
+.gallery-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%) !important;
+  transition: all 0.3s ease;
+}
+.gallery-container:hover .gallery-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%) !important;
+}
+.gallery-overlay h5,
+.gallery-overlay h6 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.65) !important;
 }
